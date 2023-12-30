@@ -11,3 +11,5 @@ How to Use Clone the repository to your local machine.
 Contributing Contributions are welcome! Feel free to open issues or pull requests for any improvements or bug fixes.
 
 Acknowledgments This project was inspired by the user interface and features of Instagram.
+
+github-Pages: https://anshul1501.github.io/instagramClone/
