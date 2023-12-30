@@ -1,0 +1,441 @@
+        * {
+            margin: 0;
+        }
+        
+         :root {
+            --rightContainerBackground: #EBECEB;
+            --userId: #919191;
+            --userName: #303030;
+        }
+        
+        @font-face {
+            font-family: logoFont;
+            src: url('fonts/Dancing_Script 2.39.34 PM/DancingScript-VariableFont_wght.ttf');
+            font-family: userName;
+            src: url('fonts/Nunito/Nunito-VariableFont_wght.ttf');
+            font-family: navText;
+            src: url('fonts/Inconsolata/Inconsolata-VariableFont_wdth,wght.ttf')
+        }
+        
+        .body {
+            border: 0px solid black;
+            width: 100%;
+            height: 780px;
+            border-radius: 30px;
+            background-color: white;
+        }
+        
+        .leftContainer {
+            border: 0px solid black;
+            width: 23%;
+            height: 780px;
+            border-radius: 30px;
+            position: absolute;
+        }
+        
+        .branding {
+            border: 0px solid black;
+            width: 80%;
+            padding: 2%;
+        }
+        
+        .branding a {
+            text-decoration: none;
+        }
+        
+        .branding #brandTitle {
+            margin-left: 28%;
+            margin-top: -17.5%;
+            font-family: logoFont;
+            color: black;
+            font-weight: bolder;
+            font-size: 25px;
+        }
+        /*User Porfile*/
+        
+        .userProfile {
+            border: 0px solid black;
+            width: 95%;
+            height: 300px;
+            margin-top: 15%;
+            margin-left: 2%;
+        }
+        
+        .userProfile img {
+            border-radius: 300%;
+            margin-left: 33%;
+        }
+        
+        .userProfile #userName {
+            font-size: 19px;
+            font-family: userName;
+            font-weight: bold;
+            text-align: center;
+            color: var(--userName);
+        }
+        
+        .userProfile #userId {
+            color: var(--userId);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            text-align: center;
+        }
+        
+        .userProfile #userData {
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: var(--userName);
+            text-align: center;
+            line-height: 50px;
+            word-spacing: 30px;
+        }
+        
+        .userProfile #following {
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            word-spacing: 50px;
+            text-align: center;
+            color: var(--userName);
+            margin-left: 5%;
+        }
+        
+        .userProfile #userBio {
+            text-align: center;
+            margin-top: 8%;
+            font-family: navText;
+        }
+        /*User Porfile*/
+        /*Story highlight*/
+        
+        .storyHighlight {
+            border: 0px solid black;
+            width: 100%;
+            height: 100px;
+        }
+        
+        .storyHighlight #title {
+            padding: 10px;
+            font-size: 17px;
+            color: var(--userName);
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            margin-left: 5%;
+        }
+        
+        .storyHighlight .highlightsContainer {
+            border: 0px solid black;
+            width: 80%;
+            height: 57%;
+            display: flex;
+            margin-left: 5%;
+            overflow-x: scroll;
+        }
+        
+        .highlightsContainer::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .highlightsContainer img {
+            border-radius: 300%;
+            border: 1px solid var(--userName);
+            padding: 2px;
+            margin-left: 5%;
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+        }
+        /*Story highlight*/
+        /*Navigation container*/
+        
+        .navContainer {
+            border: 0px solid black;
+            width: 90%;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            justify-content: space-around;
+            margin-left: 10%;
+            margin-top: 3%;
+        }
+        
+        .navContainer a {
+            text-decoration: none;
+            font-family: navText;
+            font-size: 18px;
+        }
+        
+        .navContainer p {
+            color: black;
+            margin-left: 20%;
+            margin-top: -8%;
+        }
+        
+        .navContainer svg {
+            color: var(--userName);
+            margin-right: 10%;
+        }
+        
+        .navContainer span {
+            margin-top: 8%;
+        }
+        /*Navigation container*/
+        
+        .rightContainer {
+            border: 0px solid black;
+            width: 76.3%;
+            height: 760px;
+            border-radius: 30px;
+            position: absolute;
+            margin-left: 23.1%;
+            margin-top: 0.6%;
+            background-color: var(--rightContainerBackground);
+        }
+        /*NavBar*/
+        
+        .navBar {
+            width: 90%;
+            height: 40px;
+            border: 0px solid black;
+            border-radius: 20px;
+            margin-top: 2%;
+            margin-left: 3%;
+        }
+        
+        .navBar input {
+            width: 30%;
+            border: 2px solid white;
+            padding: 1%;
+            border-radius: 30px;
+            background-color: white;
+        }
+        
+        .navBar svg {
+            margin-left: 25%;
+            margin-top: 0.9%;
+            position: absolute;
+            color: var(--userId)
+        }
+        
+        .navBar svg {
+            color: var(--userName);
+        }
+        
+        #bellIcon {
+            margin-left: 30%;
+        }
+        
+        #messageIcon {
+            margin-left: 38%;
+        }
+        
+        .postButton {
+            border: 0px solid black;
+            width: 20%;
+            text-align: center;
+            margin-left: 84%;
+            margin-top: -3.9%;
+            border-radius: 30px;
+            background-image: linear-gradient(to right, red, yellow);
+        }
+        
+        .postButton a {
+            text-decoration: none;
+        }
+        
+        .postButton p {
+            padding: 5.5%;
+            color: var(--userName);
+            font-family: navText;
+            font-weight: bold;
+        }
+        /*NavBar*/
+        /*Stories*/
+        
+        .stories {
+            border: 0px solid black;
+            width: 93%;
+            margin-left: 3%;
+            margin-top: 3%;
+            height: 120px;
+        }
+        
+        .stories p {
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .storiesFlexContainer {
+            display: flex;
+            overflow-x: scroll;
+            border: 0px solid black;
+            align-content: flex-start;
+            justify-content: space-between;
+            margin-top: 2%;
+        }
+        
+        .storiesFlexContainer::-webkit-scrollbar {
+            /*hide scroll bar*/
+            display: none;
+        }
+        
+        .storiesFlexContainer img {
+            border-radius: 300%;
+            border: 3px solid palevioletred;
+            padding: 4px;
+            margin-left: 2%;
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+        }
+        /*Stories*/
+        /*Feed*/
+        
+        .feed {
+            border: 0px solid black;
+            width: 100%;
+            height: 500px;
+            margin-top: 4%;
+        }
+        
+        .feed a {
+            text-decoration: none;
+        }
+        
+        .feed p {
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 3%;
+        }
+        
+        .feedContainer {
+            border: 0px solid black;
+            height: 464px;
+            display: flex;
+            overflow-y: scroll;
+        }
+        
+        .feedContent {
+            border: 0px solid black;
+            width: 28%;
+            height: 340px;
+            margin: 3%;
+            border-radius: 30px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        .feedHeader {
+            border: 0px solid black;
+            width: 100%;
+            height: 80px;
+            border-radius: 30px;
+        }
+        
+        .feedHeader img {
+            border-radius: 30px;
+            margin-left: 2%;
+            margin-top: 2%;
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+        }
+        
+        .feedHeader #userName {
+            font-size: 17px;
+            margin-top: -18%;
+            margin-left: 27%;
+            font-weight: bold;
+            color: var(--userName);
+            border: 0px solid black;
+            width: 70%;
+        }
+        
+        .feedHeader #location {
+            font-size: 15px;
+            margin-top: 1%;
+            margin-left: 27%;
+            color: var(--userId);
+            font-family: navText;
+            border: 0px solid black;
+            width: 50%;
+        }
+        
+        .feedHeader svg {
+            float: right;
+            margin-right: 5%;
+            margin-top: -11%;
+            color: var(--userName);
+        }
+        
+        .feedImage {
+            border: 0px solid black;
+            width: 100%;
+            height: 150px;
+            border-radius: 30px;
+        }
+        /*fit image in feed*/
+        
+        .feedImage img {
+            width: 98%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .actionButtons {
+            border: 0px solid black;
+            width: 90%;
+            height: 40px;
+            margin-top: 2%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            word-spacing: 15px;
+        }
+        
+        .bi-bookmark {
+            float: right;
+        }
+        
+        .likeCount {
+            border: 0px solid black;
+            width: 90%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        /*fit image in given dimensions*/
+        
+        .likeCount img {
+            border-radius: 30px;
+            width: 18px;
+            height: 18px;
+            object-fit: cover;
+        }
+        
+        .likeCount p {
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 9%;
+            margin-top: -7%;
+        }
+        
+        .postCaption {
+            border: 0px solid black;
+            width: 80%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 2%;
+            height: 30px;
+        }
+        
+        .postCaption p {
+            font-size: 15px;
+            font-family: navText;
+        }
+        /*Feed*/
