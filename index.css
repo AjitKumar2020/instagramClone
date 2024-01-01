@@ -166,6 +166,13 @@
             font-size: 18px;
         }
         
+        .navContainer a:hover,
+        span:hover {
+            background-color: var(--rightContainerBackground);
+            padding: 4%;
+            border-radius: 30px;
+        }
+        
         .navContainer p {
             color: black;
             margin-left: 20%;
